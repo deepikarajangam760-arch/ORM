@@ -20,12 +20,15 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 ## admin.py
+'''
 from django.contrib import admin
 from .models import FoodDelivery
 class FoodDeliveryAdmin(admin.ModelAdmin):
     list_display = ('OrderID','UserID','OrderDate','ItemName','OrderQty','UnitPrice','TotalAmount','DeliveryAddress')
 admin.site.register(FoodDelivery)
+'''
 ## model.py
+'''
 from django.db import models
 
 class FoodDelivery(models.Model):
@@ -37,6 +40,7 @@ class FoodDelivery(models.Model):
     UnitPrice=models.IntegerField()
     TotalAmount=models.IntegerField()
     DeliveryAddress=models.CharField()
+    '''
 
 
 ## OUTPUT
