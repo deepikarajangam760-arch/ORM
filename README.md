@@ -19,6 +19,7 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
+
 ## admin.py
 
 from django.contrib import admin
@@ -33,10 +34,11 @@ admin.site.register(FoodDelivery)
 
 
 ## model.py
-'''
+
 from django.db import models
 
 class FoodDelivery(models.Model):
+
     OrderID = models.IntegerField(primary_key=True)
     UserID = models.IntegerField()
     OrderDate = models.IntegerField()
@@ -45,7 +47,6 @@ class FoodDelivery(models.Model):
     UnitPrice=models.IntegerField()
     TotalAmount=models.IntegerField()
     DeliveryAddress=models.CharField()
-    '''
 
 
 ## OUTPUT
